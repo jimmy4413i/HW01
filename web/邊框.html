@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+    <head>
+        <title> CSS 邊框 </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/div.css" />
+    </head>
+    <body>
+        
+        <table border="0" bgcolor="BBD9EE" class="main1" cellspacing="10" cellpadding="10" >
+                <tr>
+                        <td>
+                                <h1>CSS 邊框 </h1>
+                        </td>
+                </tr>
+        </table>
+        <h2>
+                <a href="http://www.1keydata.com/css-tutorial/tw/">CSS教學</a>
+                &nbsp;&gt;&nbsp;  邊框
+        </h2>
+        <p>在 CSS 中常見的邊框 (border) 屬性有以下幾種：</p>
+        <p>
+            <li>
+                <a href="#borderstyle">border-style</a>
+            </li> 
+            <li>
+                <a href="##borderwidth">border-width</a>
+            </li> 
+            <li>
+                <a href="#bordercolor">border-color</a>
+            </li> 
+            <li>
+                <a href="#borderdirection">border-top-, border-left-, border-bottom-, border-right-</a>
+            </li> 
+            <li>
+                <a href="#border">border</a>
+            </li>
+        </p>
+        <a name="borderstyle"></a>
+        <h3>border-style</h3>
+        <p> 
+            <b>border-style</b> 屬性指定邊框的樣式。以下的表格列出這個屬性可能有的值，以及每一個值顯現出來的結果。
+        </p>
+        <p>
+            <table border="0" cellspacing="5" cellpadding="5" class="main-content1">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {border-style:solid;}</td>
+                    <td>
+                        <p style="border-style:solid; padding:5px;">實線</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:dashed;}</td>
+                    <td>
+                        <p style="border-style:dashed; padding:5px;">虛線</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:double;}</td>
+                    <td>
+                        <p style="border-style:double; padding:5px;">雙線</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:dotted;}</td>
+                    <td>
+                        <p style="border-style:dotted; padding:5px;">點線</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:groove;}</td>
+                    <td>
+                        <p style="border-style:solid; padding:5px;">凹線</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:ridge;}</td>
+                    <td>
+                        <p style="border-style:ridge; padding:5px;">凸線</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:inset;}</td>
+                    <td>
+                        <p style="border-style:inset; padding:5px;">嵌入線</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:outset;}</td>
+                    <td>
+                        <p style="border-style:outset; padding:5px;">浮出線</p>
+                    </td>
+                </tr>
+            </table>
+            <a name="borderwidth"></a>
+        </p>
+        <h3>border-width</h3>
+        <p>
+            <b>border-width</b> 屬性是用來設定邊框的寬度。可用的值為 thin (薄)、medium (中等)、thick (厚)，或是<br>一個數字。
+        </p>
+        <p>
+            <table border="0" cellspacing="5" cellpadding="5" class="main-content1">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {border-width:9px; border-style:solid;}</td>
+                    <td>
+                        <p style="border-width:9px; border-style:solid; padding:5px;">邊框寬度為 9px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-width:medium; border-style:dashed;}</td>
+                    <td>
+                        <p style="border-width:medium; border-style:dashed; padding:5px;">邊框寬度為中等</p>
+                    </td>
+                </tr>
+            </table>
+            <a name="bordercolor"></a>
+        </p>
+        <h3>border-color</h3>
+        <p><b>border-color</b> 屬性是用來設定邊寬的顏色。</p>
+        <p>舉例如下：</p>
+        <p>
+            <table border="0" cellspacing="5" cellpadding="5" class="main-content1">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {border-color:#0000FF; border-style:solid;}</td>
+                    <td>
+                        <p style="border-color:#0000FF; border-style:solid; padding:5px;">藍色邊框</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-color:#0000FF; border-style:solid;}</td>
+                    <td>
+                        <p style="border-color:red; border-style:dotted; padding:5px">紅色邊框</p>
+                    </td>
+                </tr>
+            </table>
+            <a name="borderdirection"></a>
+        </p>
+        <h3>border-top-, border-left-, border-bottom-, border-right-</h3>
+        <p>
+            我們可以將方向 (top - 上、bottom - 下、left - 左、right - 右) 和樣式、寬度、及顏色合起來而成為一<br>個屬性。舉例來說， <b>border-top-style</b> 屬性就是用來設定上邊框的樣式。 以下舉幾個例子：
+        </p>
+        <p>
+            <table border="0" cellspacing="5" cellpadding="5" class="main-content1">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {border-top-style:solid; border-bottom-style:dotted;}</td>
+                    <td>
+                        <p style="border-top-style:solid; border-bottom-style:dotted; padding:5px;">例1：上邊框為實線，下邊框為點線</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-top-style:solid; border-top-width:medium;}</td>
+                    <td>
+                        <p style="border-top-style:solid; border-top-width:medium; padding:5px;">例 2：上邊框為實線，且寬度中等</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-left-style:solid; border-bottom-style:dashed; border-bottom-color:#00FF00;}</td>
+                    <td>
+                        <p style="border-left-style:solid; border-bottom-style:dashed; border-bottom-color:#00FF00; padding:5px;">例3：左邊框為實線，下邊框為虛線，且顏色為綠色</p>
+                    </td>
+                </tr>
+            </table>
+            <a name="border"></a>
+        </p>
+        <h3>border</h3>
+        <p>若四邊的邊框屬性都一樣，那我們可以用一個 <b>border</b> 屬性來描述，而不必四個邊都描述一次。另<br>外，我們可以在同一行一次宣告邊框樣式、邊框寬度、以及邊框顏色。</p>
+        <p>舉例來說，若我們有以下的 CSS 碼，</p>
+        <p>
+            <table border="0" width="700" class="main" cellpadding="10" >
+                <tr>
+                    <td bgcolor="DDDDDD"> 
+                        p { <br>
+                        &nbsp; border:#0000FF 5px solid; <br>
+                        }
+                    </td>
+                </tr>   
+            </table>
+        </p>
+        <p>那以下的 HTML，</p>
+        <p>
+            <table border="0" width="700" class="main" cellpadding="10" >
+                <tr>
+                    <td bgcolor="DDDDDD"> 
+                        &lt;p&gt;用一行來宣佈所有邊框的屬性&lt;/p&gt;
+                    </td>
+                </tr>   
+            </table>
+        </p>
+        <p>會顯現出</p>
+        <p style="border:#0000FF 5px solid;" class="blue">用一行來宣佈所有邊框的屬性</p>
+        <p>
+                <center>
+                        下一頁：
+                        <a href="http://www.1keydata.com/css-tutorial/tw/padding.php">    
+                         CSS 留白
+                        </a>
+                </center>
+                <hr>
+                <center>
+                        Copyright © 2016  &nbsp; 
+                        <a href="http://www.1keydata.com/">1keydata.com</a>
+                        &nbsp;版權所有
+                </center>
+        </p>
+
+    </body>
+</html>

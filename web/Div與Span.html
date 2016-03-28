@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+    	<title>CSS Div 與 CSS Span</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/div.css" />
+    </head>
+    <body>
+        
+        <table border="0" bgcolor="BBD9EE" class="main1" cellspacing="10" cellpadding="10" >
+        	<tr>
+        		<td>
+        			<h1>CSS Div 與 CSS Span</h1>
+        		</td>
+        	</tr>
+        </table>
+        <h2>
+        	<a href="http://www.1keydata.com/css-tutorial/tw/">CSS教學</a>
+          	&nbsp;&gt;&nbsp;  CSS Div 與 CSS Span
+        </h2>
+        <h3>Div</h3>
+        <p>
+        	Div 這個標籤目的是將內容分為不同的區域，而每一個區域可以根據 CSS 中的宣告而有自己的樣<br>式。Div 是一個區塊級容器 (block-level container)，這代表在 &lt;/div&gt; 標籤後會換行。
+        </p>
+        <p>舉例來說，如果我們有以下的 CSS 樣式：</p>
+        <table border="0" width="700" class="main" cellpadding="10" >
+        	<tr>
+        		<td bgcolor="DDDDDD">
+        			.large { <br>
+  					color: #00FF00; <br> 
+  					font-family:arial;  <br>
+  					font-size: 4pt; <br>
+					}	
+				</td>
+			</tr>	
+		</table>
+		<p>以下的 HTML 碼，</p>
+		<table border="0" width="700" class="main" cellpadding="10" >
+        	<tr>
+        		<td bgcolor="DDDDDD">
+        			&lt;div class="large"&gt;  <br>
+  					這是 DIV 範例。 <br>
+					&lt;/div&gt;
+				</td>
+			</tr>	
+		</table>
+		<p>就會顯現為，</p>
+		<table border="0" width="700" class="main" cellpadding="10" >
+        	<tr>
+        		<td>
+        			<font face="arial" size="4pt" color="#00FF00">這是 DIV 範例。</font>
+				</td>
+			</tr>	
+		</table>
+		<h4>Span</h4>
+		<p>
+			Span 跟 Div 類似的地方是，這兩個標籤的目的都是將內容分為不同的區域。不同的是，Span 可以<br>涵蓋更細層的元素。所以，我們甚至可以用 &lt;span&gt; 來調整單一文字的樣式。另外，在 &lt;/span&gt; 之後<br>並不會換行。
+		</p>
+		<p>舉例來說，如果我們有以下的 CSS 樣式：</p>
+		<table border="0" width="700" class="main" cellpadding="10" >
+        	<tr>
+        		<td bgcolor="DDDDDD">
+        			.largefont { <br>
+  					color: #0066FF; <br>
+  					font-family:arial; <br>
+  					font-size: 6px; <br>
+					}
+				</td>
+			</tr>	
+		</table>
+		<p>以下的 HTML 碼，</p>
+		<table border="0" width="700" class="main" cellpadding="10" >
+        	<tr>
+        		<td bgcolor="DDDDDD">
+        			Span 不是&lt;span class="largefont"&gt;區塊級的&lt;/span&gt;.
+				</td>
+			</tr>	
+		</table>
+		<p>就會顯現為，</p>
+		<table border="0" width="700" class="main" cellpadding="10" >
+        	<tr>
+        		<td>
+        			<p>
+        				Span 不是
+        				<font face="arial" size="6pt" color="#0066FF">區塊級的</font>
+        				.
+        			</p>
+        			
+				</td>
+			</tr>	
+		</table>
+		<p>
+			<center>
+				下一頁：
+				<a href="http://www.1keydata.com/css-tutorial/tw/length-units.php">	
+				CSS 長度單位
+				</a>
+			</center>
+			<hr>
+			<center>
+				Copyright © 2016  &nbsp; 
+				<a href="http://www.1keydata.com/">1keydata.com</a>
+				&nbsp;版權所有
+			</center>
+		</p>
+		
+
+
+
+
+          
+    </body>
+</html>

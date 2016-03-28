@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <title> CSS 邊界 </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/div.css" />
+    </head>
+    <body>
+        
+        <table border="0" bgcolor="BBD9EE" class="main1" cellspacing="10" cellpadding="10" >
+                <tr>
+                        <td>
+                                <h1>CSS 邊界 </h1>
+                        </td>
+                </tr>
+        </table>
+        <h2>
+                <a href="http://www.1keydata.com/css-tutorial/tw/">CSS教學</a>
+                &nbsp;&gt;&nbsp;  邊界
+        </h2>
+        <p>
+            如我們在<a href="http://www.1keydata.com/css-tutorial/tw/box-model.php">盒子模式</a>那一頁看到的，邊界 (margin) 是在邊框之外，並且是用來設定各個元素之間的距<br>離。一個盒子有四個邊，所以我們可以對這四個邊逐一設定：
+        </p>
+        <p>
+            <li>margin-top (上邊界) </li>
+            <li>margin-right (右邊界) </li>
+            <li>margin-bottom (下邊界) </li>
+            <li>margin-left (左邊界)</li>
+        </p>
+        <p>第五個屬性，<a href="#margin">margin</a> ，是用來作為同時設定四個邊的捷徑屬性。</p>
+        <p>有三種方式可以設定邊界，分別為長度、百分比、以及 'auto'。我們來看以下的例子：</p>
+        <table border="0" width="700" class="main" cellpadding="10" >
+            <tr>
+                <td bgcolor="DDDDDD">
+                    #container { <br>
+                    margin-top:5px; <br>
+                    margin-left:10%; <br>
+                    margin-right:auto; <br>
+                    margin-bottom:20px; <br>
+                    border: 1px solid 000000; <br>
+                    }
+                </td>
+            </tr>   
+        </table>
+        <p>以下的 HTML 碼，</p>
+        <table border="0" width="700" class="main" cellpadding="10" >
+            <tr>
+                <td bgcolor="DDDDDD"> 
+                    &lt;div id="container"&gt; <br>
+                    這是邊界的例子。 <br>
+                    &lt;/div&gt; <br>
+                </td>
+            </tr>   
+        </table>
+        <p>會顯示為，</p>
+        <table border="0" width="700" class="main" cellpadding="10" >
+            <tr>
+                <td bgcolor="CCFFCC"> 
+                    <p></p>
+                    <div style="margin-top:5px; margin-left:10%; margin-right:auto; margin-bottom:20px; border: 1px solid #000000;">
+                        這是邊界的例子。
+                    </div>
+                </td>
+            </tr>   
+        </table>
+        <p>
+            在這裡，上邊界為 5px，左邊界為 10%，下邊界為 20px。
+            <a name="margin"></a>
+        </p>
+        <h3>邊界捷徑</h3>
+        <p>所有四個邊的邊界可以同時由 <b>margin</b> 屬性設定。它的語法如下：</p>
+        <p>
+            <font color="#006600">margin: [上面邊界值] [右邊邊界值] [下面邊界值] [左邊邊界值]</font>
+        </p>
+        <p>在這裡，順序非常重要。第一個值一定是上邊界的值，第二個值一定是右邊界的值，第三個值一定<br>是下邊界的值，而第四個值一定是左邊界的值。</p>
+        <p>
+                <center>
+                        下一頁：
+                        <a href="http://www.1keydata.com/css-tutorial/tw/border.php">    
+                         CSS 邊框
+                        </a>
+                </center>
+                <hr>
+                <center>
+                        Copyright © 2016  &nbsp; 
+                        <a href="http://www.1keydata.com/">1keydata.com</a>
+                        &nbsp;版權所有
+                </center>
+        </p>
+
+
+</html>

@@ -1,0 +1,17 @@
+h1{
+  color:blue;
+  font-size:36px;
+  text-decoration:underline;
+  letter-spacing: 10px;
+  line-height: 50px;
+  font-weight:700;
+  background-color: yellow;
+  border-style: ridge;
+  border-color: red;
+  border-width: 10px;
+  border-radius: 20px;
+}
+
+.sGreen{
+	color:green;
+}
